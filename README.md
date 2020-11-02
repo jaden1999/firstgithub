@@ -1,8 +1,9 @@
-provider "aws"
+provider "aws", "azure"
   region  = "${var.aws_region}"
   profile = "${var.aws_profile}"
 
-#### ________________IAM________________
+
+#iam
 
 #s3
 resource  "aws.iam_instance_profile" "s3_access_profile"  {
